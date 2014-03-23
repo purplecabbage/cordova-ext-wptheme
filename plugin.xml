@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="com.risingj.cordova.wptheme"
+    version="0.1.0">
+    <name>WPTheme</name>
+    <description>Cordova Windows Phone Theme Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,theme, windows8</keywords>
+    <repo>https://github.com/purplecabbage/cordova-ext-wptheme.git</repo>
+    <issue>https://github.com/purplecabbage/cordova-ext-wptheme/issues</issue>
+
+    <js-module src="www/wptheme.js" name="wptheme">
+        <clobbers target="wptheme" />
+    </js-module>
+
+    <!-- firefoxos -->
+<!--<platform name="firefoxos">
+    </platform> -->
+
+    <!-- android -->
+<!--<platform name="android">
+    </platform> -->
+
+    <!-- amazon-fireos -->
+<!--<platform name="amazon-fireos">
+    </platform> -->
+    
+    <!-- ubuntu -->
+<!--<platform name="ubuntu">
+    </platform> -->
+
+    <!-- ios -->
+<!--<platform name="ios">
+    </platform> -->
+
+    <!-- blackberry10 -->
+<!--<platform name="blackberry10">
+    </platform> -->
+
+    <!-- wp7 -->
+    <platform name="wp7">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WPTheme">
+                <param name="wp-package" value="com.risingj.cordova.WPTheme"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp/WPTheme.cs" />
+    </platform>
+
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="WPTheme">
+                <param name="wp-package" value="com.risingj.cordova.WPTheme"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp/WPTheme.cs" />
+    </platform>
+
+    <!-- windows8 -->
+<!--<platform name="windows8">
+    </platform> -->
+
+</plugin>
